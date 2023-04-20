@@ -19,7 +19,7 @@ int main()
 	vector<Vector2f> points;
 
 	Font f;
-	if (!f.loadFromFile("KOMIKAP_.ttf")) cout << "failed to load font..." << endl;
+	if (!f.loadFromFile("./fonts/KOMIKAP_.ttf")) cout << "failed to load font..." << endl;
 	Text instructions;
 	instructions.setFont(f);
 	instructions.setCharacterSize(24);
