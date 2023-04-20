@@ -10,7 +10,7 @@ int main()
 {
 	float width = sf::VideoMode::getDesktopMode().width;
 	float height = sf::VideoMode::getDesktopMode().height;
-	//width = 800; height = 600;
+	width = 800; height = 600;
 	// Create a video mode object
 	VideoMode vm(width, height);
 	// Create and open a window for the game
@@ -19,7 +19,7 @@ int main()
 	vector<Vector2f> points;
 
 	Font f;
-	if (!f.loadFromFile("ArianaVioleta-dz2K")) cout << "failed to load font..." << endl;
+	if (!f.loadFromFile("KOMIKAP_.ttf")) cout << "failed to load font..." << endl;
 	Text instructions;
 	instructions.setFont(f);
 	instructions.setCharacterSize(24);
@@ -106,7 +106,7 @@ int main()
 		//generate interior points
 
 		ostringstream oss;
-		oss << "Click any 4 points on the screen";
+		oss << "Click stuff and \n" << "I will write stuff";
 		instructions.setString(oss.str());
 
 		FloatRect textRect = instructions.getLocalBounds();
